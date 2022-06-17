@@ -153,7 +153,8 @@ local quickfix = {
 local explorer = {
   filetypes = { 'fern', 'NvimTree', 'lir' },
   active = {
-    { '  ', { 'black', 'red' } },
+    --  
+    { ' ', { 'black', 'red' } },
     { helper.separators.slant_right, { 'red', 'NormalBg' } },
     { b_components.divider, '' },
     { b_components.file_name(''), { 'white', 'NormalBg' } },

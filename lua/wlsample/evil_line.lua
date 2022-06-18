@@ -148,7 +148,6 @@ local quickfix = {
   show_last_status = true,
 }
 
---  
 local explorer = {
   filetypes = { 'fern', 'NvimTree', 'lir' },
   active = {

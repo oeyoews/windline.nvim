@@ -30,7 +30,7 @@ basic.vi_mode = {
   name = 'vi_mode',
   hl_colors = colors_mode,
   text = function()
-    -- return { { '  ', state.mode[2] } }
+    -- 
     return { { "  ", state.mode[2] } }
   end,
 }
@@ -148,14 +148,14 @@ local quickfix = {
   show_last_status = true,
 }
 
+--  
 local explorer = {
   filetypes = { 'fern', 'NvimTree', 'lir' },
   active = {
-    --  
-    { ' ', { 'black', 'red' } },
+    { ' ', { 'black', 'red' } },
     { helper.separators.slant_right, { 'red', 'NormalBg' } },
     { b_components.divider, '' },
-    { b_components.file_name(''), { 'white', 'NormalBg' } },
+    { b_components.file_name(''), { 'white', 'NormalBg' } },
   },
   always_active = true,
   show_last_status = true,

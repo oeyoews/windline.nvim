@@ -37,7 +37,7 @@ local function get_buf_name(modify, shorten)
 end
 
 M.file_name = function(default, modify)
-  default = default or '[No Name]'
+  default = default or '[Empty]'
   modify = modify or 'name'
   local fnc_name = get_buf_name(':t')
   if modify == 'unique' then

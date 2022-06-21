@@ -61,7 +61,7 @@ end
 
 M.file_type = function(opt)
   opt = opt or {}
-  local default = opt.default or '  '
+  local default = opt.default or ' 📁 ' --  📁
   return function(bufnr)
     local file_name = fn.fnamemodify(fn.bufname(bufnr), ':t')
     local file_ext = fn.fnamemodify(file_name, ':e')

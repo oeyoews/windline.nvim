@@ -76,7 +76,7 @@ basic.file = {
         { b_components.line_col_lua, 'white' },
         { b_components.progress_lua, '' },
         { ' ', '' },
-        { b_components.file_modified(' '), 'magenta' },
+        { b_components.file_modified('  '), 'magenta' }, -- 
       }
     else
       return {

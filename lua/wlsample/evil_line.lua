@@ -72,7 +72,7 @@ basic.file = {
       return {
         { b_components.cache_file_size(), 'default' },
         { ' ', '' },
-        { b_components.cache_file_name('[No Name]', 'unique'), 'magenta' },
+        { b_components.cache_file_name('[Empty]', 'unique'), 'magenta' },
         { b_components.line_col_lua, 'white' },
         { b_components.progress_lua, '' },
         { ' ', '' },

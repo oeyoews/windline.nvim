@@ -76,7 +76,7 @@ basic.file = {
         { b_components.line_col_lua, 'white' },
         { b_components.progress_lua, '' },
         { ' ', '' },
-        { b_components.file_modified('  '), 'magenta' }, -- 
+        { b_components.file_modified('  '), 'magenta' }, --  
       }
     else
       return {
@@ -84,7 +84,7 @@ basic.file = {
         { ' ', '' },
         { b_components.cache_file_name('[No Name]', 'unique'), 'magenta' },
         { ' ', '' },
-        { b_components.file_modified(' '), 'magenta' },
+        { b_components.file_modified('  '), 'magenta' },
       }
     end
   end,
@@ -197,7 +197,7 @@ local default = {
     { b_components.full_file_name, hl_list.Inactive },
     basic.file_name_inactive,
     basic.divider,
-    basic.divider,
+    -- basic.divider,
     { b_components.line_col, hl_list.Inactive },
     { b_components.progress, hl_list.Inactive },
   },

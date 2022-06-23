@@ -188,7 +188,6 @@ local default = {
     basic.divider,
     basic.file_right,
     basic.lsp_name,
-    basic.divider,
     basic.git,
     { git_comps.git_branch(), { 'magenta', 'black' }, breakpoint_width },
     { ' ', hl_list.Black },

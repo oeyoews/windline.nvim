@@ -185,6 +185,7 @@ local default = {
     basic.vi_mode,
     -- basic.file,
     basic.lsp_diagnos,
+    basic.divider,
     basic.file,
     basic.divider,
     basic.file_right,

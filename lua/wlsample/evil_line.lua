@@ -183,8 +183,9 @@ local default = {
   active = {
     basic.square_mode,
     basic.vi_mode,
-    basic.file,
+    -- basic.file,
     basic.lsp_diagnos,
+    basic.file,
     basic.divider,
     basic.file_right,
     basic.lsp_name,

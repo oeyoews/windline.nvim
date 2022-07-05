@@ -29,6 +29,7 @@ local colors_mode = {
 local time = os.date("%Y/%m/%d %H:%M ")
 
 basic.time = {
+	hl_colors = colors_mode,
 	text = function()
 		return {
 			{ "  ", "" },

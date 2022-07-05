@@ -26,20 +26,10 @@ local colors_mode = {
   Command = { 'magenta', 'black' },
 }
 
-local language = 'EN'
+local time = os.date(%Y-%m-%d %H:%M:%S)
+
 basic.language = {
-    text = function()
-        return {
-            { 'LANG: ', '' },
-            {
-                language,
-                '',
-                windline.make_click('change_language', function()
-                    language = language == 'EN' and 'US' or 'EN'
-                end),
-            },
-        }
-    end,
+    text = time ,
 }
 
 basic.vi_mode = {

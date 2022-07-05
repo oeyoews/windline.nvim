@@ -29,7 +29,11 @@ local colors_mode = {
 local time = os.date("%Y/%m/%d %H:%M ")
 
 basic.time = {
-	hl_colors = colors_mode,
+	hl_colors = {
+		default = hl_list.Black,
+		white = { "white", "black" },
+		magenta = { "magenta", "black" },
+	},
 	text = function()
 		return {
 			{ "  ", "" },
@@ -90,7 +94,7 @@ basic.file = {
 			return {
 				{ b_components.cache_file_size(), "default" },
 				{ " ", "" },
-				{ b_components.cache_file_name("[Empty]", "unique"), "magenta" },
+				{ b_components.cache_file_name("", "unique"), "magenta" },
 				{ b_components.line_col_lua, "white" },
 				{ b_components.progress_lua, "" },
 				{ " ", "" },

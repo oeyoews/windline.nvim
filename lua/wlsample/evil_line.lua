@@ -26,6 +26,22 @@ local colors_mode = {
   Command = { 'magenta', 'black' },
 }
 
+local language = 'EN'
+basic.language = {
+    text = function()
+        return {
+            { 'LANG: ', '' },
+            {
+                language,
+                '',
+                windline.make_click('change_language', function()
+                    language = language == 'EN' and 'US' or 'EN'
+                end),
+            },
+        }
+    end,
+}
+
 basic.vi_mode = {
   name = 'vi_mode',
   hl_colors = colors_mode,
@@ -191,6 +207,7 @@ local default = {
     basic.git,
     { git_comps.git_branch(), { 'magenta', 'black' }, breakpoint_width },
     { ' ', hl_list.Black },
+    basic.language,
     basic.square_mode,
   },
   inactive = {

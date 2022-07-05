@@ -26,7 +26,7 @@ local colors_mode = {
 	Command = { "magenta", "black" },
 }
 
-local time = os.date("%Y-%m-%d %H:%M:%S")
+local time = os.date("%Y/%m/%d %H:%M")
 
 basic.time = {
 	text = function()

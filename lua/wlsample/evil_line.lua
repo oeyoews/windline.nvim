@@ -49,6 +49,15 @@ basic.time = {
 	-- end,
 }
 
+basic.click_test = {
+	text = function()
+		return "Click me"
+	end,
+	click = function()
+		print("Do click")
+	end,
+}
+
 basic.vi_mode = {
 	name = "vi_mode",
 	hl_colors = colors_mode,
@@ -216,6 +225,7 @@ local default = {
 		{ git_comps.git_branch(), { "magenta", "black" }, breakpoint_width },
 		{ " ", hl_list.Black },
 		basic.time,
+		basic.click_test,
 		basic.square_mode,
 	},
 	inactive = {

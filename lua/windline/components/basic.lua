@@ -96,7 +96,7 @@ M.file_size = function(opt)
 
 	local suffixes = {
 		"B",
-		"kB",
+		"KB",
 		"MB",
 		"GB",
 		"TB",

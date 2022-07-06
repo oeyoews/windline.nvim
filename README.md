@@ -1,3 +1,3 @@
 ## TODO
 
-- add color for time coffee(use components)
+- [x] add color for time coffee(use components)

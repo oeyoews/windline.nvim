@@ -42,7 +42,6 @@ basic.time = {
 			-- { "  ", state.mode[2] },
 			{ "  ", "green" },
 			{ time },
-			{ breakpoint_width },
 		}
 	end,
 	-- click = function()

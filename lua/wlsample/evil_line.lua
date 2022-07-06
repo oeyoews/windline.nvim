@@ -31,8 +31,7 @@ local time = os.date("%Y/%m/%d %H:%M ")
 basic.time = {
 	text = function()
 		return {
-			{ "  ", "" },
-			{ " ", hl_list.Black },
+			{ "  ", hl_list.Black },
 			{
 				time,
 				"",

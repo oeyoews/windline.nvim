@@ -29,11 +29,12 @@ local colors_mode = {
 local time = os.date("%Y/%m/%d %H:%M ")
 
 basic.time = {
-	hl_colors = {
-		red = { "red", "black" },
-		yellow = { "yellow", "black" },
-		blue = { "blue", "black" },
-	},
+	hl_colors = colors_mode,
+	-- hl_colors = {
+	-- 	red = { "red", "black" },
+	-- 	yellow = { "yellow", "black" },
+	-- 	blue = { "blue", "black" },
+	-- },
 	text = function()
 		return {
 			{ "  ", state.mode[2] },

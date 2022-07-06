@@ -36,7 +36,7 @@ basic.time = {
 	},
 	text = function()
 		return {
-			{ "  ", "state.mode[2]" },
+			{ "  ", state.mode[2] },
 			{ time },
 		}
 	end,

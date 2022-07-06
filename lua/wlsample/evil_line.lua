@@ -27,7 +27,7 @@ local colors_mode = {
 }
 
 -- local time = os.date("%Y/%m/%d %H:%M %x %X")
-local time = os.date("%a %b")
+local time = os.date("%x %X")
 
 basic.time = {
 	-- hl_colors = colors_mode,

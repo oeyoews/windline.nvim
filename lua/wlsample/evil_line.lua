@@ -29,14 +29,10 @@ local colors_mode = {
 local time = os.date("%Y/%m/%d %H:%M ")
 
 basic.time = {
-	hl_colors = {
-		default = hl_list.Black,
-		white = { "white", "black" },
-		magenta = { "magenta", "black" },
-	},
 	text = function()
 		return {
 			{ "  ", "" },
+			{ " ", hl_list.Black },
 			{
 				time,
 				"",

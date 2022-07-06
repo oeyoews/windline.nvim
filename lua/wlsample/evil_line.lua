@@ -26,7 +26,8 @@ local colors_mode = {
 	Command = { "magenta", "black" },
 }
 
-local time = os.date("%Y/%m/%d %H:%M ")
+-- local time = os.date("%Y/%m/%d %H:%M %x %X")
+local time = os.date("%a %b")
 
 basic.time = {
 	-- hl_colors = colors_mode,

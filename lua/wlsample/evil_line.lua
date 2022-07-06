@@ -41,6 +41,9 @@ basic.time = {
 			{ time },
 		}
 	end,
+	click = function()
+		print("Do click")
+	end,
 }
 
 basic.vi_mode = {

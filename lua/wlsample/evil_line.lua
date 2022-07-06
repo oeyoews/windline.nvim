@@ -42,7 +42,6 @@ basic.time = {
 			-- { "  ", state.mode[2] },
 			{ "  ", "green" },
 			{ time },
-			{ breakpoint_width },
 		}
 	end,
 	-- click = function()
@@ -107,7 +106,7 @@ basic.file = {
 			return {
 				{ b_components.cache_file_size(), "default" },
 				{ " ", "" },
-				{ b_components.cache_file_name("[No Name]", "unique"), "magenta" },
+				{ b_components.cache_file_name("", "unique"), "magenta" },
 				{ " ", "" },
 				{ b_components.file_modified("  "), "magenta" },
 			}

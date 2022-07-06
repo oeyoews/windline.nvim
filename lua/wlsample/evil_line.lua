@@ -30,6 +30,7 @@ local colors_mode = {
 local time = os.date("%y/%m/%d %H:%M ")
 
 basic.time = {
+  width = breakpoint_width,
   -- hl_colors = colors_mode,
   hl_colors = {
     red = { "red", "black" },
@@ -38,7 +39,7 @@ basic.time = {
     green = { "green", "black" },
   },
   text = function(width)
-    if width > breakpoint_width then
+    if width > 90 then
       return {
         -- { "  ", state.mode[2] },
         { "  ", "green" },

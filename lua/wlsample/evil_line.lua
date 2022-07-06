@@ -27,26 +27,17 @@ local colors_mode = {
 }
 
 local time = os.date("%Y/%m/%d %H:%M ")
-local click_change = windline.make_click("change_time", function()
-	time = time or "Hello"
-end)
 
 basic.time = {
-	name = "vi_mode",
-	hl_colors = colors_mode,
-	-- hl_colors = {
-	-- 	red = { "red", "black" },
-	-- 	yellow = { "yellow", "black" },
-	-- 	blue = { "blue", "black" },
-	-- },
+	hl_colors = {
+		red = { "red", "black" },
+		yellow = { "yellow", "black" },
+		blue = { "blue", "black" },
+	},
 	text = function()
 		return {
 			{ "  ", "state.mode[2]" },
-			{
-				time,
-				"",
-				click_change,
-			},
+			{ time },
 		}
 	end,
 }

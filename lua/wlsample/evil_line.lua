@@ -32,13 +32,18 @@ local click_change = windline.make_click("change_time", function()
 end)
 
 basic.time = {
+	hl_colors = {
+		red = { "red", "black" },
+		yellow = { "yellow", "black" },
+		blue = { "blue", "black" },
+	},
 	text = function()
 		return {
-			{ "  ", state.mode[2] },
+			{ "  ", "red" },
 			{
 				time,
 				"",
-        click_change,
+				click_change,
 			},
 		}
 	end,
@@ -54,6 +59,7 @@ basic.vi_mode = {
 }
 basic.square_mode = {
 	hl_colors = colors_mode,
+	width = breakpoint_width,
 	text = function()
 		return { { "▊", state.mode[2] } }
 	end,

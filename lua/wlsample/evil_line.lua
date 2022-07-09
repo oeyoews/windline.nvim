@@ -26,9 +26,28 @@ local colors_mode = {
   Command = { "magenta", "black" },
 }
 
+-- add adjust this plugin
+local navic_comp = "%{%v:lua.require'nvim-navic'.get_location()%}"
+
+basic.navic_comp = {
+  hl_colors = {
+    red = { "red", "black" },
+    yellow = { "yellow", "black" },
+    blue = { "blue", "black" },
+    green = { "green", "black" },
+  },
+  text = function(_, _, width)
+    if width > 90 then
+      return {
+        { "  ", "blue" },
+        { navic_comp },
+      }
+    end
+  end,
+}
+
 -- local time = os.date("%x %X")
 local time = os.date("%y/%m/%d %H:%M ")
-local navic_comp = "%{%v:lua.require'nvim-navic'.get_location()%}"
 
 basic.time = {
   -- hl_colors = colors_mode,
@@ -44,7 +63,6 @@ basic.time = {
         -- { "  ", state.mode[2] },
         { "  ", "green" },
         { time },
-        { navic_comp },
       }
     end
   end,
@@ -213,6 +231,7 @@ local default = {
     basic.vi_mode,
     basic.file,
     basic.lsp_diagnos,
+    basic.navic_comp,
     basic.divider,
     basic.file_right,
     basic.lsp_name,

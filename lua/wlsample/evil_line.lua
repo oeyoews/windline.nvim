@@ -229,7 +229,7 @@ local default = {
     basic.square_mode,
     basic.vi_mode,
     basic.file,
-    basic.lsp_diagnos,
+    basic.lsp_diagnos, -- if put it after lsp_name, maybe have bug, fix in #xxx TODO
     basic.navic_comp,
     basic.divider,
     basic.file_right,

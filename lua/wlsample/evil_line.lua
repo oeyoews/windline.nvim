@@ -118,18 +118,18 @@ basic.file = {
         { b_components.cache_file_size(), "default" },
         { " ", "" },
         { b_components.cache_file_name("", "unique"), "magenta" },
-        -- { b_components.line_col_lua, "white" },
-        -- { b_components.progress_lua, "magenta" },
+        { b_components.line_col_lua, "white" },
+        { b_components.progress_lua, "magenta" },
         { " ", "" },
-        { b_components.file_modified("  "), "magenta" }, --  
+        { b_components.file_modified(" "), "magenta" }, --  
       }
     else
       return {
         { b_components.cache_file_size(), "default" },
         { " ", "" },
-        { b_components.cache_file_name("[No Name]", "unique"), "magenta" },
+        { b_components.cache_file_name("", "unique"), "magenta" },
         { " ", "" },
-        { b_components.file_modified("  "), "magenta" },
+        { b_components.file_modified(" "), "magenta" },
       }
     end
   end,

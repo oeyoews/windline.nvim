@@ -29,12 +29,10 @@ local colors_mode = {
 -- add adjust this plugin
 local navic_comp_status, _ = require("nvim-navic")
 
-local navic_comp = function()
+local navic_comps = function()
 	if navic_comp_status then
 		local nvim_comp = "%{%v:lua.require'nvim-navic'.get_location()%}"
 		return nvim_comp
-  else
-    vim.notify("Please install nvim-navic")
 	end
 end
 
@@ -49,7 +47,7 @@ basic.navic_comp = {
 		if width > 90 then
 			return {
 				{ " ", "red" },
-				{ navic_comps = navic_comp() },
+				{ navic_comps = navic_comps() },
 			}
 		end
 	end,

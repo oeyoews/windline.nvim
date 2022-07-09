@@ -39,7 +39,7 @@ basic.navic_comp = {
   text = function(_, _, width)
     if width > 90 then
       return {
-        { "  ", "blue" },
+        { " ", "blue" },
         { navic_comp },
       }
     end

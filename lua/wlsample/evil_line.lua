@@ -26,8 +26,8 @@ local colors_mode = {
   Command = { "magenta", "black" },
 }
 
--- add adjust this plugin
-
+-- TODO add adjust this plugin
+-- TODO use api
 local navic_comp = "%{%v:lua.require'nvim-navic'.get_location()%}"
 
 basic.navic_comp = {

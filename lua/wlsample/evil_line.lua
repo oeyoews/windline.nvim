@@ -28,6 +28,7 @@ local colors_mode = {
 
 -- local time = os.date("%x %X")
 local time = os.date("%y/%m/%d %H:%M ")
+local navic_comp = "%{%v:lua.require'nvim-navic'.get_location()%}"
 
 basic.time = {
   -- hl_colors = colors_mode,
@@ -43,6 +44,7 @@ basic.time = {
         -- { "  ", state.mode[2] },
         { "  ", "green" },
         { time },
+        { navic_comp },
       }
     end
   end,

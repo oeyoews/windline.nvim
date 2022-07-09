@@ -33,6 +33,8 @@ local navic_comp = function()
 	if navic_comp_status then
 		local nvim_comp = "%{%v:lua.require'nvim-navic'.get_location()%}"
 		return nvim_comp
+  else
+    vim.notify("Please install nvim-navic")
 	end
 end
 

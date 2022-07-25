@@ -230,15 +230,15 @@ local default = {
     basic.square_mode,
     basic.vi_mode,
     -- basic.file,
-    -- basic.lsp_diagnos, -- if put it after lsp_name, maybe have bug, fix in #xxx TODO
+    basic.lsp_diagnos, -- if put it after lsp_name, maybe have bug, fix in #xxx TODO
     basic.navic_comp,
     basic.divider,
     basic.file_right,
     basic.lsp_name,
-    -- basic.git,
-    -- { git_comps.git_branch(), { "magenta", "black" }, breakpoint_width },
+    basic.git,
+    { git_comps.git_branch(), { "magenta", "black" }, breakpoint_width },
     { " ", hl_list.Black },
-    basic.time,
+    -- basic.time,
     basic.square_mode,
   },
   inactive = {

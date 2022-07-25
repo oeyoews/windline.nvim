@@ -24,8 +24,8 @@ M.git_branch = function(opt)
     local git_dict = state.comp.git_dict or utils.buf_get_var(bufnr, "gitsigns_status_dict")
     if git_dict and git_dict.head then
       state.git_branch = git_dict.head
-      -- local icon = opt.icon or '    ' 
-      local icon = opt.icon or "  " -- 
+      -- local icon = opt.icon or '    '   
+      local icon = opt.icon or "  " -- 
       return icon .. git_dict.head
     end
     return ""

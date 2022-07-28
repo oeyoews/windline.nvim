@@ -29,30 +29,22 @@ local colors_mode = {
 -- TODO add adjust this plugin
 -- TODO use api
 -- local navic_comp = "%{%v:lua.require'nvim-navic'.get_location()%}"
-local gps = require("nvim-gps")
-
-local navic_gps = function()
-	if gps.is_available() then
-		return gps.get_location()
-	end
-end
-
-basic.navic_comp = {
-	hl_colors = {
-		red = { "red", "black" },
-		yellow = { "yellow", "black" },
-		blue = { "blue", "black" },
-		green = { "green", "black" },
-	},
-	text = function(_, _, width)
-		if width > 90 then
-			return {
-				{ " ", "red" },
-				{ navic_gps() },
-			}
-		end
-	end,
-}
+-- basic.navic_comp = {
+-- 	hl_colors = {
+-- 		red = { "red", "black" },
+-- 		yellow = { "yellow", "black" },
+-- 		blue = { "blue", "black" },
+-- 		green = { "green", "black" },
+-- 	},
+-- 	text = function(_, _, width)
+-- 		if width > 90 then
+-- 			return {
+-- 				{ " ", "red" },
+-- 				-- { navic_gps() },
+-- 			}
+-- 		end
+-- 	end,
+-- }
 
 -- local time = os.date("%x %X")
 -- local time = os.date("%y/%m/%d %H:%M ")
@@ -238,7 +230,7 @@ local default = {
 		basic.vi_mode,
 		-- basic.file,
 		basic.lsp_diagnos, -- if put it after lsp_name, maybe have bug, fix in #xxx TODO
-		basic.navic_comp,
+		-- basic.navic_comp,
 		basic.divider,
 		basic.file_right,
 		basic.lsp_name,

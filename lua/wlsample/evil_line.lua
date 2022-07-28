@@ -31,6 +31,12 @@ local colors_mode = {
 -- local navic_comp = "%{%v:lua.require'nvim-navic'.get_location()%}"
 local gps = require("nvim-gps")
 
+local navic_gps = function()
+	if gps.is_available() then
+		return gps.get_location()
+	end
+end
+
 basic.navic_comp = {
 	hl_colors = {
 		red = { "red", "black" },
@@ -42,7 +48,7 @@ basic.navic_comp = {
 		if width > 90 then
 			return {
 				{ " ", "red" },
-				{ gps },
+				{ navic_gps() },
 			}
 		end
 	end,

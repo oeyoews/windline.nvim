@@ -228,7 +228,7 @@ local default = {
 	active = {
 		basic.square_mode,
 		basic.vi_mode,
-		-- basic.file,
+		basic.file,
 		basic.lsp_diagnos, -- if put it after lsp_name, maybe have bug, fix in #xxx TODO
 		-- basic.navic_comp,
 		basic.divider,

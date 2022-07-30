@@ -226,7 +226,7 @@ basic.lsp_name = {
 local default = {
 	filetypes = { "default" },
 	active = {
-		-- basic.square_mode,
+		basic.square_mode,
 		basic.vi_mode,
 		-- basic.file,
 		basic.lsp_diagnos, -- if put it after lsp_name, maybe have bug, fix in #xxx TODO
@@ -237,7 +237,7 @@ local default = {
 		{ git_comps.git_branch(), { "magenta", "black" }, breakpoint_width },
 		{ " ", hl_list.Black },
 		-- basic.time,
-		-- basic.square_mode,
+		basic.square_mode,
 	},
 	inactive = {
 		{ b_components.full_file_name, hl_list.Inactive },

@@ -24,8 +24,7 @@ end
 local lsp_client_names = function(bufnr, opt)
 	opt = opt or {}
 	local clients = {}
-	-- local icon = opt.icon or '  '            🟨   
-	local icon = opt.icon or " 𝑆 " -- 👀     🔥  漣😀 煉     ie漣    
+	local icon = opt.icon or "  "
 	-- local sep = opt.separator or "   "
 	local sep = opt.separator or " "
 
